@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "pipeline2",
 	"properties": {
 		"activities": [
 			{
-				"name": "dataflow1",
+				"name": "Data flow1",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -20,8 +20,8 @@
 						"type": "DataFlowReference"
 					},
 					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
+						"coreCount": 32,
+						"computeType": "MemoryOptimized"
 					},
 					"traceLevel": "Fine"
 				}

@@ -1,0 +1,38 @@
+{
+	"name": "Program",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureADLSWeekend",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Program.csv",
+				"folderPath": "January",
+				"fileSystem": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "STUDENT_REF_ID",
+				"type": "String"
+			},
+			{
+				"name": "PROGRAM_NAME",
+				"type": "String"
+			},
+			{
+				"name": "PROGRAM_START_DATE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

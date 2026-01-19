@@ -1,0 +1,9 @@
+{
+	"name": "adfweekend",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c97d197f-ed88-46f0-89c1-bbd5f2a9cf0f",
+		"tenantId": "f17aac42-59a2-4965-bf87-41f9fbc4f5d6"
+	}
+}
