@@ -10,10 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@utcNow()",
-					"type": "Expression"
-				},
+				"fileName": "Incremental.csv",
 				"folderPath": "Jan",
 				"container": "output"
 			},
