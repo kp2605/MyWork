@@ -1,0 +1,24 @@
+{
+	"name": "OutPutJson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureADLSWeekend",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p.fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "JSON",
+				"fileSystem": "output"
+			}
+		},
+		"schema": {}
+	}
+}
