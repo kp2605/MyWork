@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubusercontent.com/kp2605/MyWork",
+			"url": "https://raw.githubusercontent.com/kp2605/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
