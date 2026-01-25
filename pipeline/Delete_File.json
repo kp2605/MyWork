@@ -1,0 +1,9 @@
+{
+	"name": "Delete_File",
+	"properties": {
+		"folder": {
+			"name": "ADF Scenarios"
+		},
+		"annotations": []
+	}
+}
