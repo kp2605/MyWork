@@ -23,8 +23,7 @@
 						"childItems"
 					],
 					"storeSettings": {
-						"type": "AzureBlobFSReadSettings",
-						"recursive": true,
+						"type": "AzureBlobStorageReadSettings",
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -127,6 +126,18 @@
 									"value": "@greater(activity('Lookup1').output.count, 0)",
 									"type": "Expression"
 								},
+								"ifFalseActivities": [
+									{
+										"name": "Fail1",
+										"type": "Fail",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"message": "Empty File",
+											"errorCode": "Empty File"
+										}
+									}
+								],
 								"ifTrueActivities": [
 									{
 										"name": "Copy data1",
